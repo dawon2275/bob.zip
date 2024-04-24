@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -61,4 +62,73 @@
     </div>
 </body>
 <script src="js/index.js"></script>
+=======
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>layout</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+<!-- logo -->
+            <a href="index.html">
+                <img class="logo" src="img/logo.jpg" alt="logo">
+            </a>
+            
+<!-- gnb -->
+            <nav class="gnb">
+                <ul class="main_list">
+                    <li>
+                        <a href="#">서울시</a>
+                        <ul class="sub_list">
+                            <li><a href="#">강서구</a></li>
+                            <li><a href="#">강동구</a></li>
+                            <li><a href="#">강북구</a></li>
+                            <li><a href="#">강남구</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인천광역시</a>
+                        <ul class="sub_list">
+                            <li><a href="#">서구</a></li>
+                            <li><a href="#">중구</a></li>
+                            <li><a href="#">미추홀구</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경기도</a>
+                    </li>
+                    <li>
+                        <a href="#">마이페이지</a>
+                        <ul class="sub_list">
+                            <li><a href="#">예약현황</a></li>
+                            <li><a href="#">정보수정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+<!-- login -->
+            <ul class="log">
+                <li><a href="#">login</a></li>
+                <li><a href="#">register</a></li>
+            </ul>
+        </header>
+
+<!-- //wrap -->
+    </div>
+    <main class="container py-5 text-center">
+        {% block main %}{% endblock %}
+    </main>
+</body>
+<script src="js/index.js"></script>
+>>>>>>> a04ed8e944e3150e3f1aeea662a0a674a64e6d3f
 </html>
