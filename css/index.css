@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+body {font-family: "Noto Sans KR", sans-serif; font-weight: 500; }
+#wrap {max-width: 100%; margin: 60px;}
+
+
+/* header  -- logo*/
+header {display: flex; position: relative;}
+header > a{width: 6%;}
+header > a > img {width: 100%;}
+
+/* header  -- gnb*/
+header .gnb {width: 50%; position: absolute; line-height: 85px; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+header .gnb .main_list {width: 100%; height: 85px; display: flex; }
+header .gnb .main_list > li { width: calc(100%/4); margin-left: 15px; transition: all .5s; text-align: center;} 
+header .gnb .main_list > li a {width: 100%; height: 85px; display: block; font-size: 20px; position: relative;}
+header .gnb .main_list > li a:after {content: ''; position: absolute;background: #000; bottom: 0; left: 0; width: 0; height: 1px;}
+header .gnb .main_list > li:hover a::after {width: 100%; transition: all .7s;}
+header .gnb .main_list > li .sub_list > li {display: none;} 
+
+/* log */
+header .log {width: 8%;position: absolute; top: 50%; right: 0; transform: translateY(-50%);  display: flex; line-height: 80px; text-align: right;}
+header .log li { margin-left: 8px;}
+
